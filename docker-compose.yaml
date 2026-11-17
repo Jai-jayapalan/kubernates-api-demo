@@ -6,9 +6,9 @@ services:
     container_name: node-api
     ports:
       - "3000:3000"
-    environments:
+    environment:
       NODE_ENV= production
-    volumnes:
+    volumes:
       - .:/app
       - /app/node_modules
     command: npm run dev
